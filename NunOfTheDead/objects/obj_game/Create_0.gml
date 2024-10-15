@@ -71,14 +71,14 @@ spawn_enemy = function()
 
 	// Declare a temp variable to hold an enemy type.
 	// By default this will be the pumpkill enemy.
-	var _enemy = obj_pumpkill;
+	var _enemy = obj_broom;
 
 	// If we are over level 2...
 	if (global.level > 2)
 	{
 		// Change the enemy type to either
 		// pigun or pumpkill.
-		_enemy = choose(obj_pigun, obj_pumpkill);
+		_enemy = choose(obj_broom, obj_ghost);
 	}
 
 	// If we are over level 4...
@@ -86,7 +86,7 @@ spawn_enemy = function()
 	{
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
-		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
+		_enemy = choose(obj_broom, obj_ghost, obj_skeleton);
 	}
 
 	// We want to spawn enemyes around the player.
