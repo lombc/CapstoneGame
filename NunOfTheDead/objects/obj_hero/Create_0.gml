@@ -1,3 +1,6 @@
+// Set speed of player
+
+
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 
