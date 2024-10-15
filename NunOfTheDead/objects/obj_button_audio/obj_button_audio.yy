@@ -38,5 +38,5 @@
     "path":"sprites/spr_button_small/spr_button_small.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
