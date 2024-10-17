@@ -1,5 +1,5 @@
 // Draws the upgrade background.
-draw_sprite(spr_ui_home_screen, 0, 1920 / 2, 1080 / 2);
+//draw_sprite(spr_ui_home_screen, 0, 1920 / 2, 1080 / 2);
 
 // Sets the draw colour and alpha.
 draw_set_colour(c_black);

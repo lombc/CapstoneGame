@@ -13,4 +13,4 @@ draw_set_colour(c_white);
 draw_set_alpha(1);
 
 // Draw exit text.
-draw_text_transformed(x, y + 20, "EXIT", image_xscale, image_yscale, image_angle);
+draw_text_transformed(x, y, "EXIT", image_xscale, image_yscale, image_angle);

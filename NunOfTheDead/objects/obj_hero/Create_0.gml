@@ -16,6 +16,9 @@ hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
 
+
+/* Disabled while testing mouse-click shooting mechanic
+
 // Function for the shooting weapon.
 hero_shoot = function()
 {
@@ -39,6 +42,8 @@ hero_shoot = function()
 		hero_shoot_cooldown = 1 * (1 / 60);
 	}
 }
+*/
+
 
 // Function for the swiping weapon
 hero_swipe = function()

@@ -9,8 +9,8 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Set color to opaque black.
-draw_set_colour(c_black);
+draw_set_colour(c_white);
 draw_set_alpha(1.0);
 
 // Draw reroll text.
-draw_text_transformed(x, y + 15, "REROLL", image_xscale, image_yscale, image_angle);
+draw_text_transformed(x, y, "REROLL", image_xscale, image_yscale, image_angle);

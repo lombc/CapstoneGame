@@ -44,12 +44,14 @@ hero_shoot_cooldown -= delta_time * 0.000001;
 hero_swipe_cooldown -= delta_time * 0.000001;
 hero_trail_cooldown -= delta_time * 0.000001;
 
+/*
 // Check if function cooldown is finished.
 if (hero_shoot_cooldown <= 0)
 {
 	// Call function.
 	hero_shoot();	
 }
+*/
 
 // Check if function cooldown is finished.
 if (hero_swipe_cooldown <= 0)
@@ -65,10 +67,14 @@ if (hero_trail_cooldown <= 0)
 	hero_trail();	
 }
 
+// Shooting mechanic
+if (mouse_check_button_pressed(mb_left))
+{
+	instance_create_layer(x, y, "Instances", obj_hero_bullet);
+}
 
 
 // Handles collision with wall objects
-
 if(place_meeting(x + hspeed, y, obj_wall))
 {
 	hspeed = 0;
