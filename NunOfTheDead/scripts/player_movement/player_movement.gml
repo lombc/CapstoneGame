@@ -10,7 +10,7 @@ function player_movement()
 	speed = 0;
 	
 	//DISABLE MOUSE MOVEMENT!!!
-
+/*
 	// If the left mouse button is pressed...
 	if (mouse_check_button_pressed(mb_left))
 	{
@@ -89,6 +89,34 @@ function player_movement()
 			// Add 10 to horizontal speed.
 			hspeed += 10;
 		}
+	}
+*/
+	// If the W key is down...
+	if (keyboard_check(ord("W")))
+	{
+		// Add -10 to vertical speed.
+		vspeed += -10;
+	}
+	
+	// If the S key is down...
+	if (keyboard_check(ord("S")))
+	{
+		// Add 10 to vertical speed.
+		vspeed += 10;
+	}
+	
+	// If the A key is down...
+	if (keyboard_check(ord("A")))
+	{
+		// Add -10 to horizontal speed.
+		hspeed += -10;
+	}
+	
+	// If the D key is down...
+	if (keyboard_check(ord("D")))
+	{
+		// Add 10 to horizontal speed.
+		hspeed += 10;
 	}
 
 	// Set the direction from the direction
