@@ -64,3 +64,17 @@ if (hero_trail_cooldown <= 0)
 	// Call function.
 	hero_trail();	
 }
+
+
+
+// Handles collision with wall objects
+
+if(place_meeting(x + hspeed, y, obj_wall))
+{
+	hspeed = 0;
+}
+
+
+
+
+
