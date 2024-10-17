@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_green",
-    "path":"sprites/spr_button_green/spr_button_green.yy",
+    "name":"spr_button_cross",
+    "path":"sprites/spr_button_cross/spr_button_cross.yy",
   },
   "spriteMaskId":null,
   "visible":true,

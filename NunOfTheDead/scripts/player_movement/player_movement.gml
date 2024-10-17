@@ -8,6 +8,8 @@ function player_movement()
 	// Set speed to 0.
 	// We increase it again below.
 	speed = 0;
+	
+	//DISABLE MOUSE MOVEMENT!!!
 
 	// If the left mouse button is pressed...
 	if (mouse_check_button_pressed(mb_left))

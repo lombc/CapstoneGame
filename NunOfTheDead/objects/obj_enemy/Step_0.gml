@@ -6,6 +6,7 @@ depth = -y;
 // Set direction towards the hero.
 //direction = point_direction(x, y, obj_hero.x, obj_hero.y);
 
+// Makes sure enemies are homing in on the hero.
 mp_linear_step_object(obj_hero.x, obj_hero.y, 0.5, obj_wall);
 
 // If horizontal speed is NOT 0.

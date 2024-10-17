@@ -88,10 +88,14 @@ spawn_enemy = function()
 		// pigun, pumpkill or rooster.
 		_enemy = choose(obj_broom, obj_ghost, obj_skeleton);
 	}
+	
+	instance_create_layer(obj_game.x, obj_game.y, "Instances", _enemy);
 
-	// We want to spawn enemyes around the player.
+	/*
+	
+	// We want to spawn enemies around the player.
 	// So we first get a random direction (0 to 360).
-	var _dir = 45;
+	var _dir = random(360);
 
 	// Then we get the position 1200 pixels away
 	// from the hero on the x axis.
@@ -100,7 +104,9 @@ spawn_enemy = function()
 	// Then we get the position 1200 pixels away
 	// from the hero on the y axis.
 	var _y = obj_hero.y + lengthdir_y(1200, _dir);
-
+	
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);
+
+	*/
 }
