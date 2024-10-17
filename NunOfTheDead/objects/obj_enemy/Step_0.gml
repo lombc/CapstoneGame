@@ -14,3 +14,15 @@ if(hspeed != 0)
 	image_xscale = -sign(hspeed);
 	image_yscale = 1;
 }
+
+// Handles collision with wall objects
+
+if(place_meeting(x + hspeed, y, obj_wall))
+{
+	hspeed = 0;
+}
+
+if(place_meeting(x, y + vspeed, obj_wall))
+{
+	vspeed = 0;
+}

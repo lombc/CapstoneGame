@@ -93,3 +93,8 @@ hero_trail = function()
 var _shadow = instance_create_layer(x, y, "Shadows", obj_shadow);
 // Set shadow owner.
 _shadow.owner_object = self;
+
+// Only use 1 collision mask
+mask_index = sprite_index;
+
+

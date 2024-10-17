@@ -70,7 +70,7 @@ spawn_enemy = function()
 	}
 
 	// Declare a temp variable to hold an enemy type.
-	// By default this will be the pumpkill enemy.
+	// By default this will be the Broom enemy.
 	var _enemy = obj_broom;
 
 	// If we are over level 2...
@@ -91,7 +91,7 @@ spawn_enemy = function()
 
 	// We want to spawn enemyes around the player.
 	// So we first get a random direction (0 to 360).
-	var _dir = random(360);
+	var _dir = 45;
 
 	// Then we get the position 1200 pixels away
 	// from the hero on the x axis.
